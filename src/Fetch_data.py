@@ -14,7 +14,7 @@ os.makedirs('/Users/gowtham/Desktop/Project_Stocks/data', exist_ok= True)
 for ticker in tickers:
     print(f"fetching {ticker} ticker")
     stock = yf.Ticker(ticker)
-    hist = stock.history(period = '15d')
+    hist = stock.history(period = '5y')
 
 
     if not hist.empty:
